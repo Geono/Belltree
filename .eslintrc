@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react",
+    "react-native",
+    "promise",
+    "import",
+    "jsx-a11y"
+  ],
+  "rules": {
+    "no-console": 0,
+    "react/prop-types": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-indent-props": 0,
+    "react/jsx-filename-extension": 0
+  }
+}
