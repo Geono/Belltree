@@ -2,6 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import store from './app/store';
 import App from './app/app';
+import { AppRegistry } from 'react-native';
 
 class Root extends React.Component {
     render() {
@@ -12,5 +13,7 @@ class Root extends React.Component {
         );
     }
 }
+
+AppRegistry.registerComponent('Belltree', () => App);
 
 export default App;

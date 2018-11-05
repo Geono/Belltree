@@ -1,4 +1,14 @@
 {
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
   "extends": [
     "airbnb",
     "eslint:recommended",
@@ -12,10 +22,32 @@
     "jsx-a11y"
   ],
   "rules": {
-    "no-console": 0,
+    "no-console": 1,
+    "no-unused-vars": 1,
     "react/prop-types": 0,
     "react/jsx-indent": 0,
     "react/jsx-indent-props": 0,
-    "react/jsx-filename-extension": 0
+    "react/jsx-filename-extension": 0,
+    "import/export": 0,
+    "react/jsx-closing-bracket-location": 0,
+    "react/display-name": 0,
+    "react/destructuring-assignment": 1,
+    "import/prefer-default-export": 1,
+    "react/prefer-stateless-function": 1,
+    "react/no-this-in-sfc": 1
+  },
+  "env": {
+    "browser": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".android.js",
+          ".ios.js"
+        ]
+      }
+    }
   }
 }
